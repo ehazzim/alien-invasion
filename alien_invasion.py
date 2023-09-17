@@ -15,13 +15,11 @@ class AlienInvasion:
             (self.settings.screen_width, self.settings.screen_height))
         pygame.display.set_caption("Alien Invasion")
 
-        # Calculate reference_size as a percentage of the screen width or height
-        screen_width = self.settings.screen_width
-        screen_height = self.settings.screen_height
-        reference_percentage = 0.1
-        reference_size = min(screen_width, screen_height) * reference_percentage
+        # Specify the width and height for the ship
+        ship_width = 120
+        ship_height = 200
 
-        self.ship = Ship(self, reference_size)
+        self.ship = Ship(self, ship_width, ship_height)
 
         # Set background color
         self.bg_color = (230, 230, 230)
