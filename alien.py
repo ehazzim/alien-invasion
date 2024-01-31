@@ -13,7 +13,7 @@ class Alien(Sprite):
         self.image = pygame.image.load('images/alien.png')
 
         # Scale the alien image
-        new_width = 150
+        new_width = 50
         aspect_ratio = self.image.get_width() / self.image.get_height()
         new_height = int(new_width / aspect_ratio)
         
